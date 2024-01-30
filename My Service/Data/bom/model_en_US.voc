@@ -1,0 +1,24 @@
+
+# mkwyat68.mw_getting_started.my_service.data.Temperature
+mkwyat68.mw_getting_started.my_service.data.Temperature#concept.label = temperature
+mkwyat68.mw_getting_started.my_service.data.Temperature.cold#instance.label = cold
+mkwyat68.mw_getting_started.my_service.data.Temperature.hot#instance.label = hot
+mkwyat68.mw_getting_started.my_service.data.Temperature.warm#instance.label = warm
+
+# mkwyat68.mw_getting_started.my_service.data.Weather
+mkwyat68.mw_getting_started.my_service.data.Weather#concept.label = weather
+mkwyat68.mw_getting_started.my_service.data.Weather.Weather(long,boolean,mkwyat68.mw_getting_started.my_service.data.Temperature)#phrase.navigation = a new {weather} where {0, rain forecast} {1, storm alert} {2, temperature}
+mkwyat68.mw_getting_started.my_service.data.Weather.rainForecast#phrase.action = set the rain forecast of {this} to {rain forecast}
+mkwyat68.mw_getting_started.my_service.data.Weather.rainForecast#phrase.addition_setter = add {rain forecast} to the rain forecast of {this}
+mkwyat68.mw_getting_started.my_service.data.Weather.rainForecast#phrase.navigation = {rain forecast} of {this}
+mkwyat68.mw_getting_started.my_service.data.Weather.rainForecast#phrase.subtraction_setter = subtract {rain forecast} from the rain forecast of {this}
+mkwyat68.mw_getting_started.my_service.data.Weather.stormAlert#phrase.action[0] = {this} gets storm alert only if {storm alert}
+mkwyat68.mw_getting_started.my_service.data.Weather.stormAlert#phrase.action[1] = make it {storm alert} that {this} is storm alert
+mkwyat68.mw_getting_started.my_service.data.Weather.stormAlert#phrase.action[1].deprecated = true
+mkwyat68.mw_getting_started.my_service.data.Weather.stormAlert#phrase.navigation = {this} is storm alert
+mkwyat68.mw_getting_started.my_service.data.Weather.stormAlert#phrase.negative_predicate = {this} is not storm alert
+mkwyat68.mw_getting_started.my_service.data.Weather.stormAlert#phrase.negative_predicate_setter = {this} does not get storm alert
+mkwyat68.mw_getting_started.my_service.data.Weather.stormAlert#phrase.positive_predicate_setter = {this} gets storm alert
+mkwyat68.mw_getting_started.my_service.data.Weather.temperature#phrase.action = set the temperature of {this} to {temperature}
+mkwyat68.mw_getting_started.my_service.data.Weather.temperature#phrase.clearer = clear the temperature of {this}
+mkwyat68.mw_getting_started.my_service.data.Weather.temperature#phrase.navigation = {temperature} of {this}
