@@ -1,4 +1,10 @@
 
+# mkwyat68.mw_getting_started.my_service.data.Response
+mkwyat68.mw_getting_started.my_service.data.Response#concept.label = response
+mkwyat68.mw_getting_started.my_service.data.Response.Response(java.lang.String)#phrase.navigation = a new {response} where {0, message}
+mkwyat68.mw_getting_started.my_service.data.Response.message#phrase.action = set the message of {this} to {message}
+mkwyat68.mw_getting_started.my_service.data.Response.message#phrase.navigation = {message} of {this}
+
 # mkwyat68.mw_getting_started.my_service.data.Temperature
 mkwyat68.mw_getting_started.my_service.data.Temperature#concept.label = temperature
 mkwyat68.mw_getting_started.my_service.data.Temperature.cold#instance.label = cold

@@ -20,12 +20,12 @@
             <ruleset xmlns="http://www.ibm.com/spec/ODM/dmn.xsd" conflictResolution="sequence">
                 <input bomType="java.lang.String" collection="false" name="Name"/>
                 <input bomType="java.lang.String" collection="false" name="Weather advice"/>
-                <output bomType="java.lang.String" collection="false" name="Daily advice"/>
+                <output bomType="mkwyat68.mw_getting_started.my_service.data.Response" collection="false" name="Daily advice"/>
                 <rule defaultRule="false" href="node_1/Advice%20rule.drl" kind="BusinessRule" name="Advice rule"/>
                 <rule defaultRule="true" href="node_1/output-default-setting.drl" kind="BusinessRule" name="output-default-setting"/>
             </ruleset>
         </extensionElements>
-        <variable id="node_1_ii" name="Daily advice" typeRef="java.lang.String"/>
+        <variable id="node_1_ii" name="Daily advice" typeRef="mkwyat68.mw_getting_started.my_service.data.Response"/>
         <informationRequirement>
             <requiredInput href="#node_0"/>
         </informationRequirement>

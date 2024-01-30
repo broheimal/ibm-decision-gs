@@ -2,6 +2,24 @@
 package mkwyat68.mw_getting_started.my_service.data;
 
 
+class Response
+        property ads.typeId "3"
+        property com.fasterxml.jackson.annotation.JsonTypeName "response"
+        #de.generated
+{
+    string message
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "message"
+                #update;
+    Response(string message)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    Response()
+                #dataio.default;
+}
+
 class Temperature
         extends java.lang.Enum
         property ads.typeId "1"
